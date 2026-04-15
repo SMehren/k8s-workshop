@@ -6,24 +6,64 @@
 
 ### 1.1 Windows
 
-TODO
+[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
 
 ### 1.2 Mac
 
-TODO
+[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 
-## 2. Cluster Setup
+## 2. Installation
 
-TODO
+### 2.1 Windows
 
-## 3. Einführung Workshop
+WSL Ausführen
 
-TODO(?)
+```sh
+wsl
+```
 
-## 4. [Workshop](TODO)
+In WSL k3d installieren
 
-TODO
+```sh
+curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+```
 
-## 5 Abschluss- / Bonusaufgaben
+oder
+
+```sh
+wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+```
+
+### 2.2 Mac
+
+```sh
+curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+```
+
+oder
+
+```sh
+wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+```
+
+## 3. Cluster Setup
+
+(Für Windows alle Commands in WSL ausführen)
+
+Docker Desktop ausführen
+
+```sh
+k3d cluster create <mycluster>
+```
+
+```sh
+kubectl get nodes
+```
+
+## 5. [Workshop](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+
+### 5.1
+
+## 6. Abschluss- / Bonusaufgaben
 
 TODO
