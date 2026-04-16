@@ -113,7 +113,7 @@ Um das zu verwirklichen könnt ihr entweder in die Dokumentation von [k3d](https
 Zuerst das alte Cluster entfernen
 
 ```sh
-k3d cluster remove <mycluster>
+k3d cluster delete <mycluster>
 ```
 
 Und dann ein neues HA-Cluster mit 2 Agents starten
